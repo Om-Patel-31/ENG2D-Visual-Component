@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful Words: Matrix Style</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="lock-scroll">
+    <h1>Beautiful Words</h1>
+    <h2>Click the chip to get access.</h2>
+
+    <div class="image-container">
+      <img src="brain_nobg.png" class="brain" alt="Brain illustration" />
+
+      <div id="chip">
+        <img src="chip.png" alt="Chip" />
+        <span class="chip-message"></span>
+      </div>
+    </div>
+
+    <div class="text-display-container">
+      <div class="sentence-counter">
+        Beautiful Words #<span id="sentence-number">1</span>
+      </div>
+      <div class="text-display">
+        <button class="arrow left" id="prev">&#9664;</button>
+        <p id="sentence-text">The obsidian-black garment endowed my avatar with the godlike powers Halliday’s own avatar had once possessed.</p>
+        <button class="arrow right" id="next">&#9654;</button>
+      </div>
+    </div>
+
+    <audio id="chip-sound" src="click.mp3" preload="auto"></audio>
+  </body>
+</html>

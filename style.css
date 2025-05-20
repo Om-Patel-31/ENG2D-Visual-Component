@@ -1,0 +1,142 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 16px;
+  background-color: #000;
+  color: #00ff00;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body.lock-scroll {
+  overflow: hidden;
+}
+
+h1 {
+  color: #00ff00;
+  font-size: 3rem;
+  text-shadow: 0 0 8px #00ff00;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #00ff00;
+  font-size: 1rem;
+  text-shadow: 0 0 8px #00ff00;
+  margin-top: -30px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.brain {
+  filter: drop-shadow(0 0 25px #00ff00);
+  max-width: 100%;
+  height: auto;
+}
+
+#chip {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scale: 2;
+  z-index: 10;
+}
+
+#chip img {
+  width: 80px;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 0 15px #00ff00);
+  cursor: pointer;
+}
+
+#chip:hover img {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 25px #00ff00);
+}
+
+.chip-message {
+  margin-top: -5px;
+  color: #00ff00;
+  font-weight: bold;
+  font-size: 0.75rem;
+  opacity: 0;
+  transition: opacity 0.5s;
+  text-shadow: 0 0 5px #00ff00;
+  font-size: 6px;
+}
+
+.text-display-container {
+  color: #00ff00;
+  font-family: 'Share Tech Mono', monospace;
+  margin-top: 20px;
+}
+
+.sentence-counter {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #00ff00;
+  text-shadow: 0 0 4px #00ff00;
+}
+
+.text-display {
+  background-color: rgba(0, 64, 0, 0.5);
+  border: 1px solid #00ff00;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 600px;
+  min-height: 120px;
+  box-shadow: 0 0 15px #00ff00;
+  position: relative;
+}
+
+#sentence-text {
+  flex: 1;
+  font-size: 1rem;
+  color: #00ff00;
+  margin: 0 15px;
+  max-height: 100px;
+  overflow-y: auto;
+  text-align: left;
+  padding-right: 10px;
+}
+
+#sentence-text::-webkit-scrollbar {
+  width: 6px;
+}
+
+#sentence-text::-webkit-scrollbar-thumb {
+  background-color: #00ff00;
+  border-radius: 4px;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  color: #00ff00;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.arrow:hover {
+  transform: scale(1.3);
+  color: #00ff88;
+}
